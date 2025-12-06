@@ -3,6 +3,7 @@ package org.bsuir.gr274051.gomza.part8;
 import java.nio.file.*;
 import java.util.*;
 import java.util.stream.Collectors;
+import com.example.stringlist.LoggerUtil;
 
 /**
  * Main class demonstrating all required operations.
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            System.out.println("=== Инициализация кастомного списка с емкостью 5 ===");
+            LoggerUtil.log("=== Инициализация кастомного списка с емкостью 5 ===");
             CustomStringList list = new CustomStringList(5);
 
             // 1. Добавление и удаление объектов.
